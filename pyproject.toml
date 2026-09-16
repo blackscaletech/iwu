@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools==84.0.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swarm-iwu"
+version = "0.1.0rc1"
+description = "Inference Work Units: reference-work accounting and uncertainty for verified AI outcomes"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "blackscaletech"}]
+dependencies = []
+keywords = ["evaluation", "measurement", "uncertainty", "reproducibility", "research"]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "Topic :: Scientific/Engineering"]
+
+[project.optional-dependencies]
+analysis = ["numpy==2.3.5"]
+qa = ["pypdf==6.10.0"]
+paper = ["numpy==2.3.5", "reportlab==4.4.9", "matplotlib==3.10.7"]
+
+[project.urls]
+Homepage = "https://swarm.services"
+Repository = "https://github.com/blackscaletech/iwu"
+Issues = "https://github.com/blackscaletech/iwu/issues"
+
+[tool.setuptools]
+py-modules = ["iwu", "trace_audit", "uncertainty"]

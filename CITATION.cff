@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this reference implementation and its accompanying research paper."
+type: software
+title: "IWU: Inference Work Units for Verified AI Work"
+authors:
+  - name: blackscaletech
+    website: "https://github.com/blackscaletech"
+version: 0.1.0-rc.1
+url: "https://swarm.services"
+repository-code: "https://github.com/blackscaletech/iwu"
+license: MIT
+keywords:
+  - AI evaluation
+  - measurement
+  - reference work
+  - uncertainty
+  - reproducibility

@@ -1,0 +1,19 @@
+{
+  "unit": "IWU-E60",
+  "workload_id": "demo",
+  "version": "1",
+  "tasks": [
+    {
+      "task_id": "a",
+      "probability": 0.5,
+      "reference_minutes": 2.0,
+      "calibration": "measured"
+    },
+    {
+      "task_id": "b",
+      "probability": 0.5,
+      "reference_minutes": 10.0,
+      "calibration": "measured"
+    }
+  ]
+}

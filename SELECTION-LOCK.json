@@ -1,0 +1,15 @@
+{
+  "protocol_sha256": "b047bc26f388355787e13dca6fb81d5f4bbb29c06e96dbff4db338d96e2bc05a",
+  "source_sha256": "f489d11728909937dad99ba1ed2d7c40efe12a766891e67dbc7c2486a3311236",
+  "selection_rule": "PROTOCOL.md; outcome-blind eligibility and repetition counts; alphabetical tie break",
+  "aliases": ["Claude 3 Opus", "Claude 3.5 Sonnet (New)", "Claude 3.5 Sonnet (Old)", "Claude 4 Opus"],
+  "common_tasks_before_quality_checks": 170,
+  "field_mapping": {"system": "alias", "task": "task_id", "family": "task_family", "reference_minutes": "human_minutes", "binary_outcome": "score_binarized"},
+  "metadata_observations_before_statistics": [
+    "All four aliases are from one vendor; no substitution to create artificial provider diversity.",
+    "human_source contains baseline and estimate; all imported weights are provisional, not newly calibrated IWU-E60.",
+    "Scaffold metadata contains missing values and different scaffolds; retrospective scores characterize recorded alias mixtures, not controlled base models.",
+    "generation_cost is a source field, not proven complete episode cost; label model-cost proxy only.",
+    "Do not reinterpret time-horizon analysis as an IWU validation by the source authors."
+  ]
+}

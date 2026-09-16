@@ -1,0 +1,3 @@
+numpy==2.3.5
+reportlab==4.4.9
+pypdfium2==5.13.0

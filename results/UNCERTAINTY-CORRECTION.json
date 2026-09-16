@@ -1,0 +1,444 @@
+{
+  "status": "synthetic_validation_of_uncertainty_rule",
+  "point_estimator_changed": false,
+  "one_sided_nominal_confidence": 0.95,
+  "two_sided_nominal_confidence": 0.95,
+  "scenarios": [
+    {
+      "scenario": "ordinary_independent",
+      "seed": 20261101,
+      "experiments": 2000,
+      "tasks": 60,
+      "trials_per_task": 4,
+      "independent_blocks": 240,
+      "true_credit": 0.5,
+      "methods": {
+        "task_bootstrap": {
+          "coverage_or_lower_validity": 0.9825,
+          "coverage_mc_95ci": [
+            0.9757598023331722,
+            0.9873902470404188
+          ],
+          "mc_standard_error": 0.002932042803234629,
+          "mean_lower": 0.42714098958333335,
+          "mean_interval_width": 0.1453756770833333,
+          "guarantee_assumptions_met": false,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_bound": {
+          "coverage_or_lower_validity": 0.9965,
+          "coverage_mc_95ci": [
+            0.9927928037467583,
+            0.9983035683029576
+          ],
+          "mc_standard_error": 0.0013205585939290896,
+          "mean_lower": 0.4120974241179589,
+          "mean_interval_width": 0.1753301517640824,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_bound": {
+          "coverage_or_lower_validity": 0.9965,
+          "coverage_mc_95ci": [
+            0.9927928037467583,
+            0.9983035683029576
+          ],
+          "mc_standard_error": 0.0013205585939290896,
+          "mean_lower": 0.4120974241179589,
+          "mean_interval_width": 0.1753301517640824,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_lower": {
+          "coverage_or_lower_validity": 0.995,
+          "coverage_mc_95ci": [
+            0.990820304050058,
+            0.9972818191415014
+          ],
+          "mc_standard_error": 0.0015771810295587513,
+          "mean_lower": 0.4207618107420101,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_lower": {
+          "coverage_or_lower_validity": 0.995,
+          "coverage_mc_95ci": [
+            0.990820304050058,
+            0.9972818191415014
+          ],
+          "mc_standard_error": 0.0015771810295587513,
+          "mean_lower": 0.4207618107420101,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        }
+      }
+    },
+    {
+      "scenario": "concentrated_weights",
+      "seed": 20261102,
+      "experiments": 2000,
+      "tasks": 60,
+      "trials_per_task": 4,
+      "independent_blocks": 240,
+      "true_credit": 2.975,
+      "methods": {
+        "task_bootstrap": {
+          "coverage_or_lower_validity": 0.982,
+          "coverage_mc_95ci": [
+            0.9751819578651543,
+            0.9869700085557177
+          ],
+          "mc_standard_error": 0.002972877394041,
+          "mean_lower": 0.5029322916666666,
+          "mean_interval_width": 5.738221510416666,
+          "guarantee_assumptions_met": false,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_bound": {
+          "coverage_or_lower_validity": 0.992,
+          "coverage_mc_95ci": [
+            0.9870439223284629,
+            0.995069703146784
+          ],
+          "mc_standard_error": 0.001991983935678198,
+          "mean_lower": 1.0033645276613212,
+          "mean_interval_width": 3.8682205062946116,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_bound": {
+          "coverage_or_lower_validity": 0.992,
+          "coverage_mc_95ci": [
+            0.9870439223284629,
+            0.995069703146784
+          ],
+          "mc_standard_error": 0.001991983935678198,
+          "mean_lower": 1.0033645276613212,
+          "mean_interval_width": 3.8682205062946116,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_lower": {
+          "coverage_or_lower_validity": 0.9965,
+          "coverage_mc_95ci": [
+            0.9927928037467583,
+            0.9983035683029576
+          ],
+          "mc_standard_error": 0.0013205585939290896,
+          "mean_lower": 1.1824926326851,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_lower": {
+          "coverage_or_lower_validity": 0.9965,
+          "coverage_mc_95ci": [
+            0.9927928037467583,
+            0.9983035683029576
+          ],
+          "mc_standard_error": 0.0013205585939290896,
+          "mean_lower": 1.1824926326851,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        }
+      }
+    },
+    {
+      "scenario": "near_ceiling",
+      "seed": 20261103,
+      "experiments": 2000,
+      "tasks": 12,
+      "trials_per_task": 4,
+      "independent_blocks": 48,
+      "true_credit": 0.9900000000000001,
+      "methods": {
+        "task_bootstrap": {
+          "coverage_or_lower_validity": 0.388,
+          "coverage_mc_95ci": [
+            0.366877875432465,
+            0.4095515431585356
+          ],
+          "mc_standard_error": 0.010896237882865811,
+          "mean_lower": 0.9713489583333332,
+          "mean_interval_width": 0.02858411458333333,
+          "guarantee_assumptions_met": false,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_bound": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.7936832644084119,
+          "mean_interval_width": 0.206316735591588,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_bound": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.7936832644084119,
+          "mean_interval_width": 0.206316735591588,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_lower": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.8130574218831305,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_lower": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.8130574218831305,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        }
+      }
+    },
+    {
+      "scenario": "near_floor",
+      "seed": 20261104,
+      "experiments": 2000,
+      "tasks": 12,
+      "trials_per_task": 4,
+      "independent_blocks": 48,
+      "true_credit": 0.009999999999999998,
+      "methods": {
+        "task_bootstrap": {
+          "coverage_or_lower_validity": 0.3845,
+          "coverage_mc_95ci": [
+            0.3634203167201197,
+            0.4060225212018496
+          ],
+          "mc_standard_error": 0.010877953621890469,
+          "mean_lower": 6.640625000000007e-05,
+          "mean_interval_width": 0.02806223958333333,
+          "guarantee_assumptions_met": false,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_bound": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.0,
+          "mean_interval_width": 0.20616048559158803,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_bound": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.0,
+          "mean_interval_width": 0.20616048559158803,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_lower": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.0,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_lower": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.0,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        }
+      }
+    },
+    {
+      "scenario": "family_correlated",
+      "seed": 20261105,
+      "experiments": 2000,
+      "tasks": 12,
+      "trials_per_task": 4,
+      "independent_blocks": 4,
+      "true_credit": 0.5,
+      "methods": {
+        "task_bootstrap": {
+          "coverage_or_lower_validity": 0.8695,
+          "coverage_mc_95ci": [
+            0.8540258583313894,
+            0.8835574437277646
+          ],
+          "mc_standard_error": 0.00753225563825339,
+          "mean_lower": 0.2801541666666667,
+          "mean_interval_width": 0.4349624999999999,
+          "guarantee_assumptions_met": false,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_bound": {
+          "coverage_or_lower_validity": 0.3765,
+          "coverage_mc_95ci": [
+            0.3555216996238141,
+            0.39795181105465527
+          ],
+          "mc_standard_error": 0.01083392241988099,
+          "mean_lower": 0.3145816232275108,
+          "mean_interval_width": 0.3667629039585279,
+          "guarantee_assumptions_met": false,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_bound": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.037333790439139126,
+          "mean_interval_width": 0.9235131475321383,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_lower": {
+          "coverage_or_lower_validity": 0.6905,
+          "coverage_mc_95ci": [
+            0.6698906659483828,
+            0.7103789390374597
+          ],
+          "mc_standard_error": 0.010337063170939801,
+          "mean_lower": 0.33264802507268587,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": false,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_lower": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.05810558897607181,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        }
+      }
+    },
+    {
+      "scenario": "whole_sample_correlated_negative_control",
+      "seed": 20261106,
+      "experiments": 2000,
+      "tasks": 12,
+      "trials_per_task": 4,
+      "independent_blocks": 1,
+      "true_credit": 0.5,
+      "methods": {
+        "task_bootstrap": {
+          "coverage_or_lower_validity": 0.0,
+          "coverage_mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.5,
+          "mean_interval_width": 0.0,
+          "guarantee_assumptions_met": false,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_bound": {
+          "coverage_or_lower_validity": 0.0,
+          "coverage_mc_95ci": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.4019874655375394,
+          "mean_interval_width": 0.1960250689249214,
+          "guarantee_assumptions_met": false,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_bound": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.0,
+          "mean_interval_width": 1.0,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "trial_lower": {
+          "coverage_or_lower_validity": 0.5,
+          "coverage_mc_95ci": [
+            0.4781079507511692,
+            0.5218920492488308
+          ],
+          "mc_standard_error": 0.011180339887498949,
+          "mean_lower": 0.41167454427489863,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": false,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        },
+        "block_lower": {
+          "coverage_or_lower_validity": 1.0,
+          "coverage_mc_95ci": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "mc_standard_error": 0.0,
+          "mean_lower": 0.0,
+          "mean_interval_width": null,
+          "guarantee_assumptions_met": true,
+          "interpretation": "Lower methods report P(lower <= true expected credit); interval methods report P(interval contains true expected credit)."
+        }
+      }
+    }
+  ],
+  "all_success_illustration": {
+    "lower_credit": 0.8233490885497972,
+    "one_sided_confidence": 0.95,
+    "uncertainty_margin": 0.17665091145020284,
+    "independent_blocks": 48,
+    "maximum_credit": 1.0,
+    "interpretation": "Lower bound on expected fixed-registry credit, conditional on correct bounds, independent blocks and fixed weights; not next-task success probability."
+  },
+  "total_synthetic_experiments": 12000,
+  "limitation": "No new real model or human data. Validity depends on correct independent blocks and fixed truthful bounds; unknown dependence may force vacuous intervals."
+}

@@ -1,0 +1,11 @@
+{
+  "test_methods": 60,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "deterministic_randomized_cases": 3000,
+  "independent_live_key_checks": 12,
+  "independent_external_reviewer": false,
+  "scope": "Software/accounting and structural evidence fixtures; no external certification"
+}

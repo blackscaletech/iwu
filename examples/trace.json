@@ -1,0 +1,68 @@
+{
+  "registry_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "task_version_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "system_config_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "episode_id": "one",
+  "effective_model": "fixed",
+  "expected_model": "fixed",
+  "effective_effort": "medium",
+  "expected_effort": "medium",
+  "declared_inputs": [
+    "1f5087db919ced5c123c7f507d3fcce818cb0cf6e77c2f95a8a35e951e03fdb9"
+  ],
+  "allowed_tools": [
+    "calculator"
+  ],
+  "expected_span_ids": [
+    "root",
+    "solve",
+    "verify"
+  ],
+  "executor_forbidden_inputs": [],
+  "final_artifact_sha256": "0db52f4076c082518412afd3dd3576e2cb0c63703fd7fed5e23ade60efef31d9",
+  "verification_artifact_sha256": "070c160a6299c5438070b1aa737b14fc2992ed49579c14264884886a5876f971",
+  "spans": [
+    {
+      "span_id": "root",
+      "parent_id": null,
+      "predecessor_ids": [],
+      "kind": "episode",
+      "start_ns": 0,
+      "end_ns": 100,
+      "consumes": [],
+      "produces": []
+    },
+    {
+      "span_id": "solve",
+      "parent_id": "root",
+      "predecessor_ids": [],
+      "kind": "model",
+      "model": "fixed",
+      "effort": "medium",
+      "start_ns": 1,
+      "end_ns": 90,
+      "consumes": [
+        "1f5087db919ced5c123c7f507d3fcce818cb0cf6e77c2f95a8a35e951e03fdb9"
+      ],
+      "produces": [
+        "0db52f4076c082518412afd3dd3576e2cb0c63703fd7fed5e23ade60efef31d9"
+      ]
+    },
+    {
+      "span_id": "verify",
+      "parent_id": "root",
+      "predecessor_ids": [
+        "solve"
+      ],
+      "kind": "verify",
+      "start_ns": 90,
+      "end_ns": 99,
+      "consumes": [
+        "0db52f4076c082518412afd3dd3576e2cb0c63703fd7fed5e23ade60efef31d9"
+      ],
+      "produces": [
+        "070c160a6299c5438070b1aa737b14fc2992ed49579c14264884886a5876f971"
+      ]
+    }
+  ]
+}

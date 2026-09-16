@@ -1,0 +1,112 @@
+{
+  "requested_model": "gpt-5.6-sol",
+  "requested_effort": "medium",
+  "model_attestation": "requested-only; effective model not exposed",
+  "reported_models": [],
+  "elapsed_seconds": 47.21969195897691,
+  "return_code": 0,
+  "timeout": false,
+  "final_answer": {
+    "answers": {
+      "arithmetic-1": 289428,
+      "arithmetic-2": 26042,
+      "arithmetic-3": 13000,
+      "arithmetic-4": 190486,
+      "path-1": 10,
+      "path-2": 12,
+      "path-3": 31,
+      "path-4": 30,
+      "subset-1": 90,
+      "subset-2": 94,
+      "subset-3": 106,
+      "subset-4": 133
+    }
+  },
+  "final_sha256": "3c44c75fe806f986ce049ce1ca94c6ea55d4c5d1d8b53944c563b344ad56a52b",
+  "usage": {
+    "input_tokens": 35817,
+    "cached_input_tokens": 10752,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2267,
+    "reasoning_output_tokens": 234
+  },
+  "tool_events": [
+    {
+      "type": "command_execution",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "54d7e0f4f9c9bc64cd5d0a88fb306dd79c538a3c7a30c86b4cc7eaf0ec294539"
+    }
+  ],
+  "invalid_reasons": [],
+  "dollar_cost": null,
+  "cost_note": "Existing subscription authentication; no per-episode bill was available.",
+  "arm": "local_computation",
+  "replicate": 3,
+  "task_hash": "e2ec9cf025e50bc13b0f71f18451bcb3b7087b9988f6d94b1baf21e3bb85aab6",
+  "prompt_sha256": "8bc58f4cc57549bfb4b63d79c14b4e83336a4b7fed5e1b3c2bd19b503b48cc18",
+  "scored_answers": {
+    "arithmetic-1": {
+      "correct_answer": 289428,
+      "candidate_answer": 289428,
+      "accepted": true
+    },
+    "arithmetic-2": {
+      "correct_answer": 26042,
+      "candidate_answer": 26042,
+      "accepted": true
+    },
+    "arithmetic-3": {
+      "correct_answer": 13000,
+      "candidate_answer": 13000,
+      "accepted": true
+    },
+    "arithmetic-4": {
+      "correct_answer": 190486,
+      "candidate_answer": 190486,
+      "accepted": true
+    },
+    "path-1": {
+      "correct_answer": 10,
+      "candidate_answer": 10,
+      "accepted": true
+    },
+    "path-2": {
+      "correct_answer": 12,
+      "candidate_answer": 12,
+      "accepted": true
+    },
+    "path-3": {
+      "correct_answer": 31,
+      "candidate_answer": 31,
+      "accepted": true
+    },
+    "path-4": {
+      "correct_answer": 30,
+      "candidate_answer": 30,
+      "accepted": true
+    },
+    "subset-1": {
+      "correct_answer": 90,
+      "candidate_answer": 90,
+      "accepted": true
+    },
+    "subset-2": {
+      "correct_answer": 94,
+      "candidate_answer": 94,
+      "accepted": true
+    },
+    "subset-3": {
+      "correct_answer": 106,
+      "candidate_answer": 106,
+      "accepted": true
+    },
+    "subset-4": {
+      "correct_answer": 133,
+      "candidate_answer": 133,
+      "accepted": true
+    }
+  },
+  "accepted_count": 12,
+  "eligible_for_arm_comparison": true
+}
