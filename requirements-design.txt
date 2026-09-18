@@ -1,8 +1,0 @@
-# Install alongside requirements-analysis.txt. Font licensing is supplied by the host OS.
-matplotlib==3.10.7
-fonttools==4.60.1
-cycler==0.12.1
-kiwisolver==1.4.9
-contourpy==1.3.3
-pyparsing==3.2.5
-pdfplumber==0.11.9

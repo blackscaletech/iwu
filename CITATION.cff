@@ -1,17 +1,17 @@
 cff-version: 1.2.0
-message: "Please cite this reference implementation and its accompanying research paper."
+message: "Please cite the IWU-S20 standard candidate and reference implementation."
 type: software
-title: "IWU: Inference Work Units for Verified AI Work"
+title: "IWU-S20: Reference-Centered Verified Inference Work"
 authors:
   - name: blackscaletech
     website: "https://github.com/blackscaletech"
-version: 0.1.0-rc.1
-url: "https://swarm.services"
+version: 0.2.0-alpha.1
+date-released: 2026-09-18
 repository-code: "https://github.com/blackscaletech/iwu"
 license: MIT
 keywords:
   - AI evaluation
-  - measurement
-  - reference work
-  - uncertainty
+  - inference measurement
+  - verified outcomes
+  - information theory
   - reproducibility

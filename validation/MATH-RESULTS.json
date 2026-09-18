@@ -1,0 +1,9 @@
+{
+  "all_finite": true,
+  "candidate": "IWU-S20",
+  "directional_failures": 0,
+  "max_finite_iwu": 15.678071905112638,
+  "max_reference_zero_error": 1.1102230246251565e-16,
+  "min_finite_iwu": -1.4426929770951848,
+  "records": 100000
+}

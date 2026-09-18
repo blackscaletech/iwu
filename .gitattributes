@@ -1,5 +1,5 @@
 * text=auto eol=lf
-*.pdf binary
-*.png binary
-*.jpg binary
-*.zip binary
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.mjs text eol=lf

@@ -1,12 +1,11 @@
-## Research or implementation change
+## Change
 
-Describe the problem, proposed change and scientific impact.
+Describe the proposed change and why it belongs in the IWU-S20 standard candidate.
 
-## Verification
+## Evidence
 
-- [ ] Conformance tests pass.
-- [ ] Release-content checks pass.
-- [ ] New numerical results are reproducible and their inputs are identified.
-- [ ] Existing empirical records retain their original hashes.
-- [ ] Version and changelog updates reflect compatibility changes.
-- [ ] Authorship and licensing are agreed with the maintainer before integration.
+- [ ] Python tests pass.
+- [ ] JavaScript tests pass.
+- [ ] Cross-language fixtures still pass, or their deliberate change is explained.
+- [ ] Specification and implementation remain consistent.
+- [ ] Measurement claims include limitations and falsification conditions.

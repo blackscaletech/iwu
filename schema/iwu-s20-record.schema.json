@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/blackscaletech/iwu/schema/iwu-s20-record.schema.json",
+  "title": "IWU-S20 episode record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "episode_id",
+    "system_id",
+    "block_id",
+    "registry_id",
+    "stratum_id",
+    "verifier_id",
+    "reference_id",
+    "reference_ticks",
+    "reference_denominator",
+    "reference_source",
+    "accepted",
+    "identity_sha256",
+    "reference_probability",
+    "difficulty_bits",
+    "iwu",
+    "resources"
+  ],
+  "properties": {
+    "schema": { "const": "IWU-S20/0.2-draft" },
+    "episode_id": { "$ref": "#/$defs/identifier" },
+    "system_id": { "$ref": "#/$defs/identifier" },
+    "block_id": { "$ref": "#/$defs/identifier" },
+    "registry_id": { "$ref": "#/$defs/identifier" },
+    "stratum_id": { "$ref": "#/$defs/identifier" },
+    "verifier_id": { "$ref": "#/$defs/identifier" },
+    "reference_id": { "$ref": "#/$defs/identifier" },
+    "reference_ticks": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1048575
+    },
+    "reference_denominator": { "const": 1048576 },
+    "reference_source": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["method"],
+          "properties": { "method": { "const": "s20_ticks" } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["method"],
+          "properties": { "method": { "const": "analytical" } }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["method", "successes", "trials"],
+          "properties": {
+            "method": { "const": "krichevsky_trofimov" },
+            "successes": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "trials": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            }
+          }
+        }
+      ]
+    },
+    "accepted": { "type": "boolean" },
+    "identity_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "reference_probability": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "exclusiveMaximum": 1
+    },
+    "difficulty_bits": { "type": "number", "exclusiveMinimum": 0 },
+    "iwu": { "type": "number" },
+    "resources": {
+      "type": "object",
+      "propertyNames": { "minLength": 1 },
+      "additionalProperties": {
+        "anyOf": [
+          { "type": "number", "minimum": 0 },
+          { "type": "null" }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^\\S(?:.*\\S)?$"
+    }
+  }
+}

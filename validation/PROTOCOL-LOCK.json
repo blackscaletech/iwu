@@ -1,0 +1,7 @@
+{
+  "algorithm": "sha256",
+  "file": "VALIDATION-PROTOCOL.md",
+  "sha256": "29a540748326863d0f14005392adf5dd55f6de4d4a5a62ecd76beb0329c8cc49",
+  "locked_at": "2026-09-18",
+  "status": "locked_before_implementation"
+}
